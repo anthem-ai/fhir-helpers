@@ -1,0 +1,29 @@
+[tool.coverage.report]
+show_missing = true
+# NOTE: instead of exclude_lines you should use # pragma: no cover
+# exclude_lines =
+
+[tool.coverage.run]
+omit = ["tests/*"]
+
+# https://github.com/csachs/pyproject-flake8
+# This only gets used when calling with `pflake8`
+[tool.flake8]
+max-line-length = 88
+extend-ignore = "E203,"
+exclude = "dist,.venv,.env,env,venv,.cache"
+noqa-require-code = "true"
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+files = "."
+exclude = "(build|site-packages|__pycache__)"
+
+# This line enables version inference from git
+[tool.setuptools_scm]
+
+[build-system]
+requires = ["setuptools", "wheel", "setuptools_scm"]
+build-backend = "setuptools.build_meta"

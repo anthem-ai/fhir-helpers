@@ -1,0 +1,32 @@
+stages:
+  - test
+  - publish
+
+before_script:
+  - find src -type f -exec chmod 644 {} \;  # These files are sometimes chmod 666 in Gitlab, this will correct that so we can have deterministic builds.
+  - pip install --quiet pipenv==2022.1.8
+  - pipenv install --deploy --system --dev
+
+test-3.8:
+  stage: test
+  image: python:3.8
+  script:
+    - make test
+    - make build-dist
+    - sha256sum dist/*
+
+test-3.9:
+  image: python:3.9
+  stage: test
+  script:
+    - make test
+    - make build-dist
+    - sha256sum dist/*
+
+test:docs-must-be-current:
+  stage: test
+  image: python:3.8  # Output can be slightly unstable between Python versions. This needs to match the version generated on.
+  script:
+    - make builddocs
+    - git add .
+    - git diff --staged --exit-code

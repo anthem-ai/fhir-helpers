@@ -1,0 +1,9 @@
+black==21.9b0
+flake8~=3.9
+isort~=5.8
+mypy==0.910
+pytest~=6.2
+pytest-cov~=2.12
+
+freezegun~=1.1
+types-freezegun~=0.1.3

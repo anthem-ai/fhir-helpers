@@ -1,0 +1,37 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+fhir_helpers = {path = ".", editable = true}
+
+[dev-packages]
+black = "~=22.1"
+isort = "~=5.8"
+flake8 = "~=4.0"
+pyproject-flake8 = "==0.0.1a2"
+flake8-noqa = "~=1.2"
+pep8-naming = "~=0.12.1"
+pytest = "~=6.2"
+pytest-cov = "~=3.0"
+mypy = "==0.931"
+freezegun = "~=1.1"
+types-freezegun = "~=1.1"
+types-python-dateutil = "~=2.8"
+types-protobuf = "~=3.17"
+# types-backports workaround https://github.com/python/mypy/issues/10644
+types-backports = "~=0.1.3"
+# Documentation building
+sphinx = "~=4.2"
+sphinx-autobuild = "2021.3.14"
+sphinx-markdown-builder = "~=0.5.4"
+sphinx_rtd_theme = "~=1.0"
+# Package building
+build = "~=0.7.0"
+wheel = "~=0.37.0"
+setuptools_scm = "~=6.3"
+# Package publishing
+twine = "~=3.4"
+# AlmostMake: Python `make` implementation
+almost-make = "~=0.5.1"

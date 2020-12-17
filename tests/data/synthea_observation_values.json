@@ -1,0 +1,228 @@
+{
+    "resourceType": "Bundle",
+    "type": "transaction",
+    "entry": [
+      {
+        "fullUrl": "urn:uuid:6e80a07a-16d2-4663-ba58-e0bfc6b0f174",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "6e80a07a-16d2-4663-ba58-e0bfc6b0f174",
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "39156-5",
+                "display": "Body Mass Index"
+              }
+            ],
+            "text": "Body Mass Index"
+          },
+          "subject": {
+            "reference": "urn:uuid:822f82f3-3d03-4ce1-8c2b-14764c244fcf"
+          },
+          "encounter": {
+            "reference": "urn:uuid:b88dd693-d876-4853-9904-2847caa9886d"
+          },
+          "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+          "issued": "2010-03-29T15:17:19.272-04:00",
+          "valueQuantity": {
+            "value": 19.234219238418373,
+            "unit": "kg/m2",
+            "system": "http://unitsofmeasure.org",
+            "code": "kg/m2"
+          }
+        },
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        }
+      },
+      {
+        "fullUrl": "urn:uuid:6e80a07a-16d2-4663-ba58-e0bfc6b0f174",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "6e80a07a-16d2-4663-ba58-e0bfc6b0f174",
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "39156-5",
+                "display": "Body Mass Index"
+              }
+            ],
+            "text": "Body Mass Index"
+          },
+          "subject": {
+            "reference": "urn:uuid:822f82f3-3d03-4ce1-8c2b-14764c244fcf"
+          },
+          "encounter": {
+            "reference": "urn:uuid:b88dd693-d876-4853-9904-2847caa9886d"
+          },
+          "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+          "issued": "2010-03-29T15:17:19.272-04:00",
+          "valueQuantity": {
+            "value": 22.0,
+            "unit": "kg/m2",
+            "system": "http://unitsofmeasure.org",
+            "code": "kg/m2"
+          }
+        },
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        }
+      },
+      {
+        "fullUrl": "urn:uuid:6e80a07a-16d2-4663-ba58-e0bfc6b0f174",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "6e80a07a-16d2-4663-ba58-e0bfc6b0f174",
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "39156-5",
+                "display": "Body Mass Index"
+              }
+            ],
+            "text": "Body Mass Index"
+          },
+          "subject": {
+            "reference": "urn:uuid:822f82f3-3d03-4ce1-8c2b-14764c244fcf"
+          },
+          "encounter": {
+            "reference": "urn:uuid:b88dd693-d876-4853-9904-2847caa9886d"
+          },
+          "effectiveDateTime": "2010-03-29T15:17:19-04:00",
+          "issued": "2010-03-29T15:17:19.272-04:00",
+          "valueQuantity": {
+            "value": 25.5,
+            "unit": "kg/m2",
+            "system": "http://unitsofmeasure.org",
+            "code": "kg/m2"
+          }
+        },
+        "request": {
+          "method": "POST",
+          "url": "Observation"
+        }
+      },
+
+      {
+        "fullUrl": "urn:uuid:6e80a07a-16d2-4663-ba58-e0bfc6b0f174",
+        "resource": {
+          "resourceType": "Observation",
+          "id": "c25e0768-60a4-4cf4-b85a-a0581e8bb894",
+          "status": "final",
+          "code": {
+            "coding": [
+              {
+                "system": "http://loinc.org",
+                "code": "72166-2",
+                "display": "Tobacco smoking status NHIS"
+              }
+            ],
+            "text": "Tobacco smoking status NHIS"
+          },
+          "subject": {
+            "reference": "urn:uuid:822f82f3-3d03-4ce1-8c2b-14764c244fcf"
+          },
+          "encounter": {
+            "reference": "urn:uuid:59319a2c-89bf-4b21-9329-b3cfcb42cc04"
+          },
+          "effectiveDateTime": "2013-04-15T15:17:19-04:00",
+          "issued": "2013-04-15T15:17:19.272-04:00",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "266919005",
+                "display": "Never smoker"
+              }
+            ],
+            "text": "Never smoker"
+          }
+      },
+      "request": {
+          "method": "POST",
+          "url": "Observation"
+      }
+    },
+
+
+    {
+      "fullUrl": "urn:uuid:79b1a5d2-35c8-8543-398c-1312bb815109",
+      "resource": {
+        "resourceType": "Observation",
+        "id": "79b1a5d2-35c8-8543-398c-1312bb815109",
+        "status": "final",
+        "code": {
+          "coding": [
+            {
+              "system": "http://loinc.org",
+              "code": "85354-9",
+              "display": "Blood Pressure"
+            }
+          ],
+          "text": "Blood Pressure"
+        },
+        "subject": {
+          "reference": "urn:uuid:85e52038-4d69-50e9-9e46-e379b8d830af"
+        },
+        "encounter": {
+          "reference": "urn:uuid:bcac71bf-6ff5-8eca-1422-e80aaea63cac"
+        },
+        "effectiveDateTime": "2012-11-17T20:35:35-07:00",
+        "issued": "2012-11-17T20:35:35.623-07:00",
+        "component": [
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8462-4",
+                  "display": "Diastolic Blood Pressure"
+                }
+              ],
+              "text": "Diastolic Blood Pressure"
+            },
+            "valueQuantity": {
+              "value": 83,
+              "unit": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          },
+          {
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "8480-6",
+                  "display": "Systolic Blood Pressure"
+                }
+              ],
+              "text": "Systolic Blood Pressure"
+            },
+            "valueQuantity": {
+              "value": 114,
+              "unit": "mm[Hg]",
+              "system": "http://unitsofmeasure.org",
+              "code": "mm[Hg]"
+            }
+          }
+        ]
+      },
+      "request": {
+        "method": "POST",
+        "url": "Observation"
+      }
+    }
+
+  ]
+}
+
+
